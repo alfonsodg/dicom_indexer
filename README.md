@@ -1,4 +1,4 @@
-#Indexer Client
+#DICOM Indexer
 
 
 
