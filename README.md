@@ -65,14 +65,14 @@ pip install -r requirements.txt
 
 ###Crear o modificar server.json colocando el código del centro médico
 ```
-    {
-      "server": "000"
-    }
+{
+  "server": "000"
+}
 ```
 
 ###Agregar modificaciones SQL al MySQL del PACS, para esto basta con copiar el contenido dentro de **add_indexer.sql** dentro del mismo mysql o (desde el directorio dicom_indexer)
 ```
-    mysql BASEDATOS_DCM4CHEE < extras/add_indexer.sql
+mysql BASEDATOS_DCM4CHEE < extras/add_indexer.sql
 ```
 
 ###Para la primera carga ejecutar client.py con el parámetro initial (desde el directorio dicom_indexer)
@@ -85,14 +85,14 @@ python client.py initial
 
 * Para agregar más estudios al indexador basta con ejecutar
 ```
-**python client.py** o simplemente ejecutar **./client.py**
+python client.py o simplemente ejecutar ./client.py
 ```
 
 
 ##Crontab (Tareas Automatizadas)
 Agregar en el cron con el comando **crontab -e**
 ```
-    */5 * * * * /srv/dicom_indexer/extras/dicom_indexer.sh
+*/5 * * * * /srv/dicom_indexer/extras/dicom_indexer.sh
 ```
 
 
