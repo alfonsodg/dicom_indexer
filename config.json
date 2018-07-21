@@ -1,0 +1,12 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": "3306",
+    "user": "root",
+    "password": "",
+    "name": "pacsdb"
+  },
+  "server": "000",
+  "key": "5954032458e83fc75abf23afd1c01ce1",
+  "webservice_url": "http://localhost:8899/api/v1/register"
+}
